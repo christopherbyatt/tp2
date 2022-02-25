@@ -102,9 +102,13 @@ h1 { /* = 32px */
 h2 { /* = 24px */
    font-size: 2.4rem;
    line-height: 1;
+}
+.sous-titre_header {
    text-align: center;
 }
-
+footer h2 {
+   margin-left: 1rem;
+}
 @media (min-width: 600px) {
    h2 { /* = 32px */
        font-size: 3.2rem;
@@ -151,7 +155,13 @@ h4 { /* = 16px */
       text-align: center;
    }
 }
+section p {
+   text-align: left;
+}
 section h2 {
+   text-align: left;
+}
+.aside_p {
    text-align: left;
 }
 .nav {
@@ -187,14 +197,21 @@ figure {
    list-style: none;
    justify-content: space-between;
 }
+.nav_link {
+   display: inline-block;
+   padding: 0.25rem;
+   text-decoration: none;
+}
 @media (min-width: 600px){
-   .nav_list {
-
+   .nav_link {
+      padding: 1rem;
    }
 }
 .nav_listItem {
    padding: 4px;
+   margin: 0;
 }
+
 .logo {
    flex: 1 1 auto;
    text-align: center;
@@ -209,11 +226,21 @@ figure {
       max-width: 300px;
    }
 }
+.nav-footer .nav_link {
+   color: white;
+}
 .nav-footer .nav_list{
    display: flex;
    flex-wrap: wrap;
    background-color: black;
-   justify-content: space-evenly;
+   justify-content: space-between;
+}
+.nav_link-active{
+background-color: #dbe8ec;
+}
+.nav-footer .nav_link-active{
+   color: orangered;
+   
 }
 @media (min-width: 600px){
    header {
