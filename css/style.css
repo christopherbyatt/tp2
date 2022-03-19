@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* Polices liées */
+/* copier ici l'instruction @import url('...'); proposé par Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Roboto+Condensed:wght@300;700&display=swap');
 
 /**
  * @author Christopher Byatt 206
@@ -30,9 +33,6 @@
    }
 /* Charte typographique
    ========================================================================== */
-/* Polices liées */
-/* copier ici l'instruction @import url('...'); proposé par Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Roboto+Condensed:wght@300;700&display=swap');
 /* Base décimale */
 html{
    font-size: 62.5%;
@@ -165,13 +165,16 @@ section h2 {
    text-align: left;
 }
 .nav {
-   font-family: 'News Cycle';
+   /*font-family: 'News Cycle';*/
+   font-family: 'News Cycle', sans-serif; /* utiliser la famille générique en solution de repli */
    text-transform: uppercase;
-   font-size: 300;
+   /*font-size: 300;*/
+   font-weight: 300;
 }
 figure {
    margin: 0;
 }
+/* La nomenclature BEM exige 2 caractères _ pour séparer BLOC__ELEMENT */
 .nav_header{
    display: flex;
    flex-wrap: wrap;
